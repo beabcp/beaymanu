@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&M</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body class="body">
+    <section id="inicio">
+        <div class="inicio">
+            <div class="text-title" style="display: flex; justify-content: space-between; margin-bottom: 3rem;">
+                <div>MADRID - 2026</div>
+                <div>INVITACIÓN</div>
+            </div>
+            <div class="text-header" style="text-align: center; margin-bottom: 1rem;">NOS CASAMOS</div>
+            <div class="text-title" style="text-align: center; margin-bottom: 3rem;">QUERIDOS AMIGOS Y FAMILIA, NOS CASAMOS. ACOMPÁÑANOS EL 31 DE OCUBRE EN MADRID.</div>
+            <div class="text-inicio" style="text-align: center;">
+                <div>Beatriz</div>
+                <div style="color: var(--color-blue); margin-top: 1rem;">&</div>
+                <div>Manuel</div>
+            </div>
+            <div class="text-header" style="text-align: center; margin-top: 3rem; margin-bottom: 1rem;">31.10.206</div>
+        </div>
+    </section>
+    <section id="cuenta">
+        <div class="inicio">
+            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
+                <div style="margin-bottom: -1rem;">CUENTA</div>
+                <div>REGRESIVA</div>
+            </div>
+            <div style="position: relative;">
+                <img
+                    alt="marco"
+                    src="img/marco.png"
+                    style="width: 320px; height: 165px; position: absolute; z-index: -1;"/>
+                <div style="display: grid; grid-template-columns: 25% 25% 25% 25%; margin: 2rem; text-align: center;">
+                    <div class="text-subheader" id="dias" style="margin-top: 2rem;"></div>
+                    <div class="text-subheader" id="minutos" style="margin-top: 2rem;"></div>
+                    <div class="text-subheader" id="horas" style="margin-top: 2rem;"></div>
+                    <div class="text-subheader" id="segundos" style="color: var(--color-yellow); margin-top: 2rem;"></div>
+                    <div class="text-subtitle" style="font-size: .6rem;">DÍAS</div>
+                    <div class="text-subtitle" style="font-size: .6rem;">MINUTOS</div>
+                    <div class="text-subtitle" style="font-size: .6rem;">HORAS</div>
+                    <div class="text-subtitle" style="font-size: .6rem;">SEGUNDOS</div>
+                </div>
+                <div class="progress" role="progressbar" style="height: 2px; margin-left: 3rem; margin-right: 3rem; margin-bottom: 2rem;">
+                    <div class="progress-bar" id="progressbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="detalles">
+        <div class="inicio">
+            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
+                <div style="margin-bottom: -1rem;">DETALLES</div>
+                <div>DE LA BODA</div>
+            </div>
+            <div class="text-title" style="display: flex; align-items: center; margin: 2rem 0 1rem 0;">
+                <span class="lineh"></span>CEREMONIA
+            </div>
+            <div>
+                <img
+                    alt="iglesia"
+                    src="img/iglesia-trazos-sinfondo.png"
+                    style="width: stretch;"/>
+            </div>
+            <div class="text-subsubheader" style="margin: .5rem 0 .25rem 0;">Iglesia de Santa María Magdalena</div>
+            <div class="text-subtitle" style="margin-bottom: .5rem;">PL. MAYOR, 3, 28180, TORRELAGUNA, MADRID</div>
+            <div class="text-title" style="display: grid; grid-template-columns: 30% 30% 33%; margin-top: .5rem; color: var(--color-blue); font-weight: 200;">
+                <div style="display: flex; align-items: center;">
+                    <img
+                        alt="schedule"
+                        src="img/schedule.svg"
+                        style="width: 1rem;"/>
+                    <span style="margin-left: .25rem;">13:00H</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img
+                        alt="location"
+                        src="img/location.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-title" href="https://maps.app.goo.gl/ho4jgbEzqCY5z4s48" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-blue); font-weight: 200;">MAPS</a>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img
+                        alt="calendar"
+                        src="img/calendar.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-title" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Manuel&dates=20261031/20261031&location=Iglesia de Santa María Magdalena, 28180 Torrelaguna, Madrid" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-blue); font-weight: 200;">CALENDARIO</a>
+                </div>
+            </div>
+            <div class="text-title" style="display: flex; align-items: center; margin: 3rem 0 1rem 0;">
+                <span class="lineh"></span>FINCA
+            </div>
+            <div>
+                <img
+                    alt="iglesia"
+                    src="img/finca-trazos-sinfondo.png"
+                    style="width: stretch;"/>
+            </div>
+            <div class="text-subsubheader" style="margin: .5rem 0 .25rem 0;">Finca Casa de Oficios</div>
+            <div class="text-subtitle" style="margin-bottom: .5rem;">CAM. CASA DE OFICIOS, 28189, MADRID</div>
+            <div class="text-title" style="display: grid; grid-template-columns: 30% 30% 33%; margin-top: .5rem; color: var(--color-blue); font-weight: 200;">
+                <div style="display: flex; align-items: center;">
+                    <img
+                        alt="schedule"
+                        src="img/schedule.svg"
+                        style="width: 1rem;"/>
+                    <span style="margin-left: .25rem;">14:00H</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img
+                        alt="location"
+                        src="img/location.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-title" href="https://maps.app.goo.gl/yg7b2ud9H82sPkK38" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-blue); font-weight: 200;">MAPS</a>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img
+                        alt="calendar"
+                        src="img/calendar.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-title" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Manuel&dates=20261031/20261031&location=Iglesia de Santa María Magdalena, 28180 Torrelaguna, Madrid" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-blue); font-weight: 200;">CALENDARIO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="planificacion">
+        <div class="inicio">
+            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
+                <div style="margin-bottom: -1rem;">PROGRAMA</div>
+                <div>DEL DÍA</div>
+            </div>
+            <div style="position: relative;">
+                <div style="display: flex; justify-content: center;">
+                    <img
+                        alt="programa"
+                        src="img/linev.png"
+                        style="width: 320px; height: 380px;"/>
+                </div>
+                <div class="movimiento" style="position: absolute; top: 0; left: 1rem;">
+                    <div class="text-brush">Bus de ida</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                </div>
+                <div class="movimiento-derecha" style="position: absolute; top: 3.5rem; right: 4.5rem;">
+                    <div class="text-brush" style="color: var(--color-yellow-dark);">Ceremonia</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: var(--color-blue); background: var(--color-yellow); margin-left: 1rem;">12:00H</div>
+                </div>
+                <div class="movimiento" style="position: absolute; top: 8rem; left: 3rem;">
+                    <div class="text-brush">Cocktail</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                </div>
+                <div class="movimiento" style="position: absolute; top: 12rem; left: 4.5rem;">
+                    <div class="text-brush">Banquete</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                </div>
+                <div class="movimiento-derecha" style="position: absolute; top: 16.5rem; right: 3rem;">
+                    <div class="text-brush">Fiesta</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                </div>
+                <div class="movimiento" style="position: absolute; top: 20rem;">
+                    <div class="text-brush">Bus de vuelta</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="preguntas">
+        <div class="inicio">
+            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
+                <div>PREGUNTAS</div>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Pregunta 1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Respuesta 1.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Pregunta 2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Respuesta 2.</div>
+                    </div>
+                </div><div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Pregunta 3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Respuesta 3.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rsvp">
+        <div class="inicio" style="position: relative;">
+            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
+                <div style="margin-bottom: 1rem;">RSVP</div>
+            </div>
+            <!-- <div class="lineash">
+                <div class="rectangle"> -->
+            <form
+                class="form"
+                method="POST"
+                data-email="esther.sanchezatienzas@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbzTvcncScDPqd_mEGb2jJUmPhBUs-N74j0zU2mFcssLO-rLO_DiUchbjIkSaECadBQZ/exec">
+                <div class="form">
+                    <div class="text-title" style="margin-bottom: 1rem;">Por favor, confirma tu asistencia antes del xx de xx de 2026.</div>
+                    <div style="position: relative; margin-bottom: 1rem; z-index: 1;">
+                        <label for="nombre" class="text-input" style="color: var(--color-blue);">NOMBRE*</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="" name="NOMBRE" required>
+                        <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-yellow); z-index: -1;"></div>
+                    </div>
+                    <div style="position: relative; margin-bottom: 1rem;">
+                        <label for="apellidos" class="text-input" style="color: var(--color-blue);">APELLIDOS*</label>
+                        <input type="text" class="form-control" id="apellidos" placeholder="" name="APELLIDOS" required>
+                        <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-yellow); z-index: -1;"></div>
+                    </div>
+                    <div class="text-input" style="margin-bottom: .5rem;">¿ASISTIRÁS?</div>
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                        <div class="form-check" style="cursor: pointer;">
+                            <input class="form-check-input si" type="radio" name="¿ASISTENCIA?" id="si" style="cursor: pointer;" value="SI" checked>
+                            <label class="form-check-label" for="si" style="cursor: pointer;">Sí</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input no" type="radio" name="¿ASISTENCIA?" id="no" style="cursor: pointer;" value="NO">
+                            <label class="form-check-label" for="no" style="cursor: pointer;">No</label>
+                        </div>
+                    </div>
+                    <div id="confirmacion">
+                        <div style="position: relative; margin-bottom: 1rem;">
+                            <label for="alergias" class="text-input">ALERGIAS / INTOLERANCIAS</label>
+                            <input type="text" class="form-control" id="alergias" placeholder="" name="ALERGIAS">
+                            <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-yellow); z-index: -1;"></div>
+                        </div>
+                        <div class="text-input" style="margin-bottom: .5rem;">NÚMERO DE INVITADOS (INCLUYÉNDOTE)</div>
+                        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <button type="button" class="btn btn-primary" id="less" disabled onclick="addInvitados(false)">-</button>
+                            <div class="text-input" style="font-weight: 400; margin: 0 1rem;" id="numeroInvitados">1</div>
+                            <button type="button" class="btn btn-primary" id="plus" onclick="addInvitados(true)">+</button>
+                        </div>
+                        <div class="hidden" style="padding: 1rem 1rem 1rem 1rem; margin-bottom: 1rem; background: var(--color-yellow-opacity); border-radius: .5rem;" id="invitados"></div>
+                        <div class="text-input" style="margin-bottom: .5rem;">¿NECESITAS TRANSPORTE EN AUTOBÚS?</div>
+                        <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                            <div class="form-check" style="cursor: pointer;">
+                                <input class="form-check-input si" type="radio" name="¿AUTOBÚS?" id="autobusSi" style="cursor: pointer;" value="SI">
+                                <label class="form-check-label" for="autobusSi" style="cursor: pointer;">Sí</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input no" type="radio" name="¿AUTOBÚS?" id="autobusNo" style="cursor: pointer;" value="NO" checked>
+                                <label class="form-check-label" for="autobusNo" style="cursor: pointer;">No</label>
+                            </div>
+                        </div>
+                        <div style="position: relative; margin-bottom: 1rem;">
+                            <label for="cancion" class="text-input">CANCIÓN QUE NO PUEDE FALTAR</label>
+                            <input type="text" class="form-control" id="cancion" placeholder="" name="CANCION">
+                            <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-yellow); z-index: -1;"></div>
+                        </div>
+                    </div>
+                    <div style="position: relative; margin-bottom: 1rem;">
+                        <label for="mensaje" class="text-input">MENSAJE PARA LA PAREJA</label>
+                        <textarea type="text" class="form-control" id="mensaje" placeholder="" name="MENSAJE"></textarea>
+                        <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-yellow); z-index: -1;"></div>
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <button type="submit" class="btn btn-secondary" id="send">
+                            <img
+                                alt="Enviar"
+                                src="img/send.svg"
+                                style="transform: rotate(-30deg); margin-top: -.5rem;"/>
+                            ENVIAR CONFIRMACIÓN
+                        </button>
+                    </div>
+                </div>
+                <div class="gracias text-title" style="display: none; color: var(--color-blue);">
+                    <div style="margin-bottom: 1rem;">¡PERFECTO!</div>
+                    <div style="margin-bottom: 1rem; font-weight: 300;">Hemos recibido vuestra respuesta correctamente.</div>
+                    <div style="margin-bottom: 1rem; font-weight: 300;">Estamos deseando celebrar este día tan especial con vosotros y compartir juntos momentos inolvidables. Gracias por dedicar unos minutos a completar el formulario.</div>
+                    <div style="margin-bottom: 1rem; font-weight: 300;">Si más adelante necesitáis modificar algún dato, no dudéis en poneros en contacto con nosotros.</div>
+                    <div>¡Nos vemos el 31 de octubre!</div>
+                </div>
+                <div class="losiento text-title" style="display: none; color: var(--color-blue);">
+                    <div style="margin-bottom: 1rem;">¡QUÉ PENA!</div>
+                    <div style="margin-bottom: 1rem; font-weight: 300;">Hemos recibido vuesta respuesta y sentimos mucho que no podáis acompañarnos en un día tan importante para nosotros.</div>
+                    <div style="margin-bottom: 1rem; font-weight: 300;">Aunque os echaremos de mens, agradecemos de corazón que nos hayáis avisado y esperamos tener la oportunidad de celebrar juntos en otra ocasión.</div>
+                    <div>Os mandamos un abrazo enorme y brindaremos por vosotros.</div>
+                </div>
+            </form>
+                <!-- </div>
+            </div> -->
+        </div>
+    </section>
+    <section id="fin">
+        <div class="fin">
+            <div class="text-brush" style="text-align: center; font-size: 3rem; color: var(--color-blue);">
+                <span>Beatriz</span>
+                <img
+                    alt="corazon"
+                    src="img/heart.svg"
+                    style="margin-top: -1rem;"/>
+                <span>Manuel</span>
+            </div>
+            <div class="text-title" style="text-align: center; color: var(--color-blue);">31.10.2026</div>
+        </div>
+    </section>
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
+    <script>
+        // CUENTA REGRESIVA
+        const dias = document.getElementById("dias");
+        const horas = document.getElementById("horas");
+        const minutos = document.getElementById("minutos");
+        const segundos = document.getElementById("segundos");
+        const progressbar = document.getElementById("progressbar")
+
+        function ahoraEnMadrid() {
+            const ahora = new Date();
+            const formatter = new Intl.DateTimeFormat("en-US", {
+                timeZone: "Europe/Madrid",
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            });
+            const partes = formatter.formatToParts(ahora);
+            const valores = {};
+            partes.forEach(p => valores[p.type] = p.value);
+            return new Date(`${valores.year}-${valores.month}-${valores.day}T` + `${valores.hour}:${valores.minute}:${valores.second}`);
+        }
+
+        const date = new Date("2026-10-31T13:00:00");
+        function actualizarContador() {
+            const diferencia = date.getTime() - ahoraEnMadrid().getTime();
+            if (diferencia <= 0) {
+                clearInterval(intervalo);
+                dias.textContent = 0;
+                horas.textContent = "0";
+                minutos.textContent = "0";
+                segundos.textContent = "0";
+                return;
+            }
+            const segundosTotales = Math.floor(diferencia / 1000);
+            dias.textContent = Math.floor(segundosTotales / (60 * 60 * 24));
+            horas.textContent = String(Math.floor((segundosTotales % (60 * 60 * 24) / (60 * 60)))).padStart(2, "0");
+            minutos.textContent = String(Math.floor((segundosTotales % (60 * 60)) / 60)).padStart(2, "0");
+            segundos.textContent = String(segundosTotales % 60).padStart(2, "0");
+            progressbar.style.width = String((1-((304-Math.floor(segundosTotales / (60 * 60 * 24)))/304)) * 100) + '%';
+        }
+        actualizarContador();
+        const intervalo = setInterval(actualizarContador, 1000);
+
+        // RSVP
+        const asistenciaSi = document.getElementById("si");
+        const asistenciaNo = document.getElementById("no");
+        const confirmacion = document.getElementById("confirmacion");
+        asistenciaSi.addEventListener("change", () => {
+            confirmacion.classList.remove("hidden");
+            send.disabled = false;
+        });
+        asistenciaNo.addEventListener("change", () => {
+            confirmacion.classList.add("hidden");
+            send.disabled = false;
+        });
+
+        const numeroInvitados = document.getElementById("numeroInvitados");
+        const less = document.getElementById("less");
+        const plus = document.getElementById("plus");
+        const invitados = document.getElementById("invitados");
+        function addInvitados(add) {
+            invitados.innerHTML = "";
+            if (add) {
+                numeroInvitados.textContent = Number(numeroInvitados.textContent) + 1;
+                less.disabled = false;
+                invitados.classList.remove("hidden");
+            } else {
+                numeroInvitados.textContent = Number(numeroInvitados.textContent) - 1;
+                if (Number(numeroInvitados.textContent) === 1) {
+                    less.disabled = true;
+                    invitados.classList.add("hidden");
+                }
+            }
+            for (let i = 2; i <= Number(numeroInvitados.textContent); i++) {
+                const div = document.createElement("div");
+                div.innerHTML = `
+                    <div class="text-input" style="margin-bottom: .5rem; font-weight: 400;">INVITADO ${i}</div>
+                    <div style="position: relative; margin-bottom: 1rem;">
+                        <label for="nombre" class="text-input">NOMBRE*</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="" name="NOMBRE INVITADO ${i}" required>
+                        <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-blue); z-index: -1;"></div>
+                    </div>
+                    <div style="position: relative; margin-bottom: 1rem;">
+                        <label for="apellidos" class="text-input">APELLIDOS*</label>
+                        <input type="text" class="form-control" id="apellidos" placeholder="" name="APELLIDO INVITADO ${i}" required>
+                        <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-blue); z-index: -1;"></div>
+                    </div>
+                    <div style="position: relative; margin-bottom: 1rem;">
+                        <label for="alergias" class="text-input">ALERGIAS / INTOLERANCIAS</label>
+                        <input type="text" class="form-control" id="alergias" placeholder="" name="ALERGIAS INVITADO ${i}">
+                        <div class="lineh" style="position: absolute; bottom: 3px; width: 100%; background-color: var(--color-blue); z-index: -1;"></div>
+                    </div>
+                `;
+                invitados.appendChild(div);
+            }
+        }
+        
+        // MOVIMIENTO
+        const movimientos = document.querySelectorAll(".movimiento");
+        const movimientosDerecha = document.querySelectorAll(".movimiento-derecha");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        });
+        movimientos.forEach((el) => observer.observe(el));
+        movimientosDerecha.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
