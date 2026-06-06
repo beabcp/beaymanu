@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-  --color-base: #fef4ea;
+  --color-base: #FEF4EA;
+  --color-principal: #770928;
+  --color-secundario: #2F3F7B;
+  --color-secundario-claro: #91acdb;
+
+
+
   --color-blue: #91acdb;
   --color-blue-dark: #2f3f7b;
   --color-yellow: #F8DE8C;
@@ -9,6 +15,59 @@
   --color-blue-opacity: #91acdb70;
   --color-yellow-opacity: #F8DE8C70;
 }
+
+@font-face {
+  font-family: "WrittenOnHisHands";
+  src: url('../fonts/written-on-his-hands.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CupcakeSmiles";
+  src: url('../fonts/cupcake-smiles.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-portada {
+  font-family: "WrittenOnHisHands";
+  font-size: 2rem;
+  color: var(--color-principal);
+}
+.text-apartado {
+  font-family: "CupcakeSmiles";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--color-secundario);
+}
+.text-apartado-sub {
+  font-family: "BrightAngels";
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 100;
+  font-style: normal;
+  color: var(--color-secundario-claro);
+}
+.text-titulo {
+  font-family: "WrittenOnHisHands";
+  font-size: 1.5rem;
+  color: var(--color-principal);
+}
+.text-contenido {
+  font-family: "CupcakeSmiles";
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-style: normal;
+  /* letter-spacing: .1rem; */
+  color: var(--color-secundario-claro);
+}
+
+
+
+
+
+
 
 @font-face {
   font-family: "Blimps";
@@ -236,7 +295,8 @@ input[type="radio"]:checked {
 }
 
 .chip {
-  background: var(--color-blue);
+  background: var(--color-principal);
+  opacity: .8;
   border-radius: 5px;
   padding: 0 .5rem;
   width: fit-content;

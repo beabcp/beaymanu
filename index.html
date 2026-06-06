@@ -11,48 +11,115 @@
 <body class="body">
     <section id="inicio">
         <div class="inicio">
-            <div class="text-title" style="display: flex; justify-content: space-between; margin-bottom: 3rem;">
-                <div>MADRID - 2026</div>
-                <div>INVITACIÓN</div>
-            </div>
-            <div class="text-header" style="text-align: center; margin-bottom: 1rem;">NOS CASAMOS</div>
-            <div class="text-title" style="text-align: center; margin-bottom: 3rem;">QUERIDOS AMIGOS Y FAMILIA, NOS CASAMOS. ACOMPÁÑANOS EL 31 DE OCUBRE EN MADRID.</div>
-            <div class="text-inicio" style="text-align: center;">
-                <div>Beatriz</div>
-                <div style="color: var(--color-blue); margin-top: 1rem;">&</div>
-                <div>Manuel</div>
-            </div>
-            <div class="text-header" style="text-align: center; margin-top: 3rem; margin-bottom: 1rem;">31.10.206</div>
-        </div>
-    </section>
-    <section id="cuenta">
-        <div class="inicio">
-            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
-                <div style="margin-bottom: -1rem;">CUENTA</div>
-                <div>REGRESIVA</div>
-            </div>
-            <div style="position: relative;">
+            <div>
                 <img
-                    alt="marco"
-                    src="img/marco.png"
-                    style="width: 320px; height: 165px; position: absolute; z-index: -1;"/>
-                <div style="display: grid; grid-template-columns: 25% 25% 25% 25%; margin: 2rem; text-align: center;">
-                    <div class="text-subheader" id="dias" style="margin-top: 2rem;"></div>
-                    <div class="text-subheader" id="minutos" style="margin-top: 2rem;"></div>
-                    <div class="text-subheader" id="horas" style="margin-top: 2rem;"></div>
-                    <div class="text-subheader" id="segundos" style="color: var(--color-yellow); margin-top: 2rem;"></div>
-                    <div class="text-subtitle" style="font-size: .6rem;">DÍAS</div>
-                    <div class="text-subtitle" style="font-size: .6rem;">MINUTOS</div>
-                    <div class="text-subtitle" style="font-size: .6rem;">HORAS</div>
-                    <div class="text-subtitle" style="font-size: .6rem;">SEGUNDOS</div>
-                </div>
-                <div class="progress" role="progressbar" style="height: 2px; margin-left: 3rem; margin-right: 3rem; margin-bottom: 2rem;">
-                    <div class="progress-bar" id="progressbar"></div>
-                </div>
+                    alt="bola"
+                    src="img/bola-discoteca.png"
+                    style="width: 10rem;"/>
+            </div>
+            <div style="margin: -7rem 0 -4rem 1rem;">
+                <img
+                    alt="bola"
+                    src="img/luces.png"
+                    style="width: 320px; transform: rotate(-20deg);"/>
+            </div>
+            <div class="text-portada" style="transform: rotate(-5deg); margin-left: 5rem;">Beatriz y Manuel</div>
+            <div class="text-portada" style="transform: rotate(-5deg); margin: -1rem 0 0 12rem; font-size: 1.5rem;">¡nos casamos!</div>
+            <div class="text-portada" style="text-align: end; margin: 0 1rem 0 0; font-size: 1.5rem; font-style: italic;">31.10.2026</div>
+            <div style="margin: -5rem 0 -4rem -1rem;">
+                <img
+                    alt="bola"
+                    src="img/luces.png"
+                    style="width: 320px; transform: rotate(15deg);"/>
+            </div>
+            <div>
+                <img
+                    alt="bola"
+                    src="img/mesa.png"
+                    class="fade-right"
+                    style="width: 320px;"/>
+            </div>
+            <div class="text-portada" style="display: grid; grid-template-columns: 25% 25% 25% 25%; text-align: center; margin-top: 1rem;">
+                <div style="line-height: 1.5rem;" id="dias"></div>
+                <div style="line-height: 1.5rem;" id="minutos"></div>
+                <div style="line-height: 1.5rem;" id="horas"></div>
+                <div style="line-height: 1.5rem;" id="segundos"></div>
+                <div style="font-size: 1rem;">días</div>
+                <div style="font-size: 1rem;">horas</div>
+                <div style="font-size: 1rem;">minutos</div>
+                <div style="font-size: 1rem;">segundos</div>
             </div>
         </div>
     </section>
     <section id="detalles">
+        <div class="inicio" style="text-align: center;">
+            <div class="text-apartado" style="margin-top: 2rem;">DETALLES</div>
+            <div class="text-apartado-sub" style="margin-top: -4rem;">de la boda</div>
+            <div class="text-titulo" style="font-size: 2rem; margin-top: 1rem;">Ceremonia</div>
+            <div style="margin: -3rem 0;">
+                <img
+                    alt="iglesia"
+                    src="img/iglesia-marco.png"
+                    style="width: 320px;"/>
+            </div>
+            <div class="text-titulo" style="font-size: 1.4rem; color: var(--color-secundario);">Iglesia de Santa María Magdalena</div>
+            <div class="text-contenido" style="display: grid; grid-template-columns: 30% 30% 33%; margin-top: -.5rem;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img
+                        alt="schedule"
+                        src="img/schedule.svg"
+                        style="width: 1rem;"/>
+                    <span style="margin-left: .25rem;">13:00H</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img
+                        alt="location"
+                        src="img/location.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-contenido" href="https://maps.app.goo.gl/9e7RmhXXiqb3PGXq6" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-secundario-claro);">MAPS</a>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img
+                        alt="calendar"
+                        src="img/calendar.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-contenido" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Manuel&dates=20261031/20261031&location=Iglesia de Santa María Magdalena, 28180 Torrelaguna, Madrid" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-secundario-claro);">CALENDARIO</a>
+                </div>
+            </div>
+            <div class="text-titulo" style="font-size: 2rem; margin-top: 2rem;">Finca</div>
+            <div style="margin: -3rem 0;">
+                <img
+                    alt="iglesia"
+                    src="img/finca-marco.png"
+                    style="width: 320px;"/>
+            </div>
+            <div class="text-titulo" style="font-size: 1.4rem; color: var(--color-secundario);">Finca Casa de Oficios</div>
+            <div class="text-contenido" style="display: grid; grid-template-columns: 30% 30% 33%; margin-top: -.5rem;">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img
+                        alt="schedule"
+                        src="img/schedule.svg"
+                        style="width: 1rem;"/>
+                    <span style="margin-left: .25rem;">13:00H</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img
+                        alt="location"
+                        src="img/location.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-contenido" href="https://maps.app.goo.gl/yg7b2ud9H82sPkK38" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-secundario-claro);">MAPS</a>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img
+                        alt="calendar"
+                        src="img/calendar.svg"
+                        style="width: 1rem;"/>
+                    <a class="text-contenido" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Bea+y+Manuel&dates=20261031/20261031&location=Finca Casa de Oficios, 28189, Madrid" target="_blank" style="text-decoration: underline; margin-left: .25rem; color: var(--color-secundario-claro);">CALENDARIO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="detalles">
         <div class="inicio">
             <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
                 <div style="margin-bottom: -1rem;">DETALLES</div>
@@ -64,7 +131,7 @@
             <div>
                 <img
                     alt="iglesia"
-                    src="img/iglesia-trazos-sinfondo.png"
+                    src="img/iglesia-marco.png"
                     style="width: stretch;"/>
             </div>
             <div class="text-subsubheader" style="margin: .5rem 0 .25rem 0;">Iglesia de Santa María Magdalena</div>
@@ -98,7 +165,7 @@
             <div>
                 <img
                     alt="iglesia"
-                    src="img/finca-trazos-sinfondo.png"
+                    src="img/finca-marco.png"
                     style="width: stretch;"/>
             </div>
             <div class="text-subsubheader" style="margin: .5rem 0 .25rem 0;">Finca Casa de Oficios</div>
@@ -127,14 +194,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="planificacion">
-        <div class="inicio">
-            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
-                <div style="margin-bottom: -1rem;">PROGRAMA</div>
-                <div>DEL DÍA</div>
-            </div>
-            <div style="position: relative;">
+        <div class="inicio" style="text-align: center;">
+            <div class="text-apartado" style="margin-top: 2rem;">PROGRAMA</div>
+            <div class="text-apartado-sub" style="margin-top: -4rem;">del día</div>
+            <div style="position: relative; margin-top: 1rem;">
                 <div style="display: flex; justify-content: center;">
                     <img
                         alt="programa"
@@ -142,68 +207,54 @@
                         style="width: 320px; height: 380px;"/>
                 </div>
                 <div class="movimiento" style="position: absolute; top: 0; left: 1rem;">
-                    <div class="text-brush">Bus de ida</div>
+                    <div class="text-titulo" style="margin-bottom: -.2rem;">Bus de ida</div>
                     <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
                 </div>
                 <div class="movimiento-derecha" style="position: absolute; top: 3.5rem; right: 4.5rem;">
-                    <div class="text-brush" style="color: var(--color-yellow-dark);">Ceremonia</div>
-                    <div class="chip text-subtitle" style="font-size: .7rem; color: var(--color-blue); background: var(--color-yellow); margin-left: 1rem;">12:00H</div>
+                    <div class="text-titulo" style="color: var(--color-secundario); margin-bottom: -.2rem;">Ceremonia</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; background: var(--color-secundario); margin-left: 1rem;">12:00H</div>
                 </div>
                 <div class="movimiento" style="position: absolute; top: 8rem; left: 3rem;">
-                    <div class="text-brush">Cocktail</div>
+                    <div class="text-titulo" style="margin-bottom: -.2rem;">Cóctel</div>
                     <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
                 </div>
                 <div class="movimiento" style="position: absolute; top: 12rem; left: 4.5rem;">
-                    <div class="text-brush">Banquete</div>
+                    <div class="text-titulo" style="margin-bottom: -.2rem;">Banquete</div>
                     <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
                 </div>
                 <div class="movimiento-derecha" style="position: absolute; top: 16.5rem; right: 3rem;">
-                    <div class="text-brush">Fiesta</div>
+                    <div class="text-titulo" style="margin-bottom: -.2rem;">Fiesta</div>
                     <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
                 </div>
                 <div class="movimiento" style="position: absolute; top: 20rem;">
-                    <div class="text-brush">Bus de vuelta</div>
+                    <div class="text-titulo" style="margin-bottom: -.2rem;">Bus de vuelta</div>
                     <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
                 </div>
             </div>
         </div>
     </section>
     <section id="preguntas">
-        <div class="inicio">
-            <div class="text-header" style="border-top: 1px solid var(--color-blue); margin: 1rem 0; padding-top: 1.5rem;">
-                <div>PREGUNTAS</div>
+        <div class="inicio" style="text-align: center;">
+            <div class="text-apartado" style="margin-top: 2rem;">PREGUNTAS</div>
+            <div class="text-apartado-sub" style="margin-top: -4rem;">frecuentes</div>
+            <div class="text-titulo" style="margin-bottom: 1rem; margin-top: 1rem;">¿Hasta cuándo puedo confirmar?</div>
+            <div class="text-contenido" style="margin-bottom: 2rem;">Os agradeceríamos que confirmarais vuestra asistencia antes del <span style="font-weight: bold;">1 de julio</span>.</div>
+            <div class="text-titulo" style="margin-bottom: 1rem;">
+                <div style="margin-bottom: -.5rem;">¿Cómo se llega a la celebración?</div>
+                <div style="margin-bottom: -.5rem;">¿Hay aparcamiento?</div>
+                <div>¿Habrá transporte organizado?</div>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Pregunta 1
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Respuesta 1.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Pregunta 2
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Respuesta 2.</div>
-                    </div>
-                </div><div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Pregunta 3
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Respuesta 3.</div>
-                    </div>
-                </div>
+            <div class="text-contenido" style="margin-bottom: 2rem;">
+                <div>Habrá autobuses desde <span style="font-weight: bold;">Madrid, Tres Cantos y Guadalajara</span>. Compartiremos los puntos de salida más adelante.</div>
+                <div>Si venís en coche, os recomendamos llegar con tiempo. La iglesia está en el centro histórico de Torrelaguna y el aparcamiento por la zona puede ser limitado. Algunas opciones cercanas son el <span style="font-weight: bold;">Camino de la Varquilla</span>, el <span style="font-weight: bold;">parking público de la Calle Lavadero</span>, el <span style="font-weight: bold;">aparcamiento municipal de la M-131</span> o la zona del <span style="font-weight: bold;">Polideportivo Municipal Antonio Martín</span>, desde donde se puede llegar caminando a la iglesia en pocos minutos.</div>
+                <div>En <span style="font-weight: bold;">Casa Oficios</span> hay aparcamiento suficiente.</div>
             </div>
+            <div class="text-titulo" style="margin-bottom: 1rem;">¿Pueden asistir niños?</div>
+            <div class="text-contenido" style="margin-bottom: 2rem;">Nos encantan los niños, pero hemos pensado en una celebración principalmente para adultos. Si os resulta complicado asistir sin ellos, no hay ningún problema: solo os pedimos que nos lo contéis <span style="font-weight: bold;">con antelación</span>.</div>
+            <div class="text-titulo" style="margin-bottom: 1rem;">¿El evento es en el exterior?</div>
+            <div class="text-contenido" style="margin-bottom: 2rem;">Si el tiempo acompaña, el cóctel será al aire libre. La comida y la fiesta se celebrarán en espacios cubiertos.</div>
+            <div class="text-titulo" style="margin-bottom: 1rem;">¿Dónde puedo dejar mis cosas?</div>
+            <div class="text-contenido" style="margin-bottom: 2rem;">Habrá un espacio habilitado en la finca para dejar chaquetas, bolsos y cualqueir otra pertenencia durante la celebración.</div>
         </div>
     </section>
     <section id="rsvp">
@@ -324,7 +375,6 @@
         const horas = document.getElementById("horas");
         const minutos = document.getElementById("minutos");
         const segundos = document.getElementById("segundos");
-        const progressbar = document.getElementById("progressbar")
 
         function ahoraEnMadrid() {
             const ahora = new Date();
@@ -360,7 +410,6 @@
             horas.textContent = String(Math.floor((segundosTotales % (60 * 60 * 24) / (60 * 60)))).padStart(2, "0");
             minutos.textContent = String(Math.floor((segundosTotales % (60 * 60)) / 60)).padStart(2, "0");
             segundos.textContent = String(segundosTotales % 60).padStart(2, "0");
-            progressbar.style.width = String((1-((304-Math.floor(segundosTotales / (60 * 60 * 24)))/304)) * 100) + '%';
         }
         actualizarContador();
         const intervalo = setInterval(actualizarContador, 1000);
