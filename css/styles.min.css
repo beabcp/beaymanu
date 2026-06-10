@@ -83,6 +83,14 @@
   text-align: center;
 }
 
+.rectangle {
+  margin-top: 2rem;
+  border: 4px dotted var(--color-principal);
+  padding: .5rem;
+  width: fit-content;
+  justify-self: center;
+}
+
 /* INPUT */
 .form-control {
   box-shadow: none !important;

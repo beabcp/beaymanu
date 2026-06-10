@@ -49,6 +49,14 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
+    if (data['¿ASISTENCIA?'] === 'NO') {
+      data['¿AUTOBÚS?'] = 'NO';
+      data['PARADA'] = "";
+    } else {
+      if (data['¿AUTOBÚS?'] === 'NO') {
+        data['PARADA'] = "";
+      }
+    }
 
     disableAllButtons(form);
     var url = form.action;

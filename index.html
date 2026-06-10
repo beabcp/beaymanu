@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 <body class="body">
     <section id="inicio">
@@ -132,27 +133,27 @@
                 </div>
                 <div class="movimiento" style="position: absolute; top: 0; left: 1rem;">
                     <div class="text-titulo" style="margin-bottom: -.2rem;">Bus de ida</div>
-                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">11:30H</div>
                 </div>
                 <div class="movimiento-derecha" style="position: absolute; top: 3.5rem; right: 4.5rem;">
                     <div class="text-titulo" style="color: var(--color-secundario); margin-bottom: -.2rem;">Ceremonia</div>
-                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; background: var(--color-secundario); margin-left: 1rem;">12:00H</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; background: var(--color-secundario); margin-left: 1rem;">13:00H</div>
                 </div>
                 <div class="movimiento" style="position: absolute; top: 8rem; left: 3rem;">
                     <div class="text-titulo" style="margin-bottom: -.2rem;">Cóctel</div>
-                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">15:00H</div>
                 </div>
                 <div class="movimiento" style="position: absolute; top: 12rem; left: 4.5rem;">
                     <div class="text-titulo" style="margin-bottom: -.2rem;">Banquete</div>
-                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">16:30H</div>
                 </div>
                 <div class="movimiento-derecha" style="position: absolute; top: 16.5rem; right: 3rem;">
                     <div class="text-titulo" style="margin-bottom: -.2rem;">Fiesta</div>
-                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">18:30H</div>
                 </div>
                 <div class="movimiento" style="position: absolute; top: 20rem;">
                     <div class="text-titulo" style="margin-bottom: -.2rem;">Bus de vuelta</div>
-                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">12:00H</div>
+                    <div class="chip text-subtitle" style="font-size: .7rem; color: white; margin-left: 1rem;">01:00H</div>
                 </div>
             </div>
         </div>
@@ -172,6 +173,7 @@
                 <div>Habrá autobuses desde <span style="font-weight: bold;">Madrid, Tres Cantos y Guadalajara</span>. Compartiremos los puntos de salida más adelante.</div>
                 <div>Si venís en coche, os recomendamos llegar con tiempo. La iglesia está en el centro histórico de Torrelaguna y el aparcamiento por la zona puede ser limitado. Algunas opciones cercanas son el <span style="font-weight: bold;">Camino de la Varquilla</span>, el <span style="font-weight: bold;">parking público de la Calle Lavadero</span>, el <span style="font-weight: bold;">aparcamiento municipal de la M-131</span> o la zona del <span style="font-weight: bold;">Polideportivo Municipal Antonio Martín</span>, desde donde se puede llegar caminando a la iglesia en pocos minutos.</div>
                 <div>En <span style="font-weight: bold;">Casa Oficios</span> hay aparcamiento suficiente.</div>
+                <div><span style="font-weight: bold;">¡Importante!</span> Al ir hacia allí, pasad obligatoriamente por <span style="font-weight: bold;">Torremocha del Jarama</span>. Evitad un camino alternativo que indica el GPS antes de llegar al pueblo, ya que está en muy mal estado y es impracticable para la mayoría de los coches.</div>
             </div>
             <div class="text-titulo" style="margin-bottom: 1rem;">¿Pueden asistir niños?</div>
             <div class="text-contenido" style="margin-bottom: 2rem;">Nos encantan los niños, pero hemos pensado en una celebración principalmente para adultos. Si os resulta complicado asistir sin ellos, no hay ningún problema: solo os pedimos que nos lo contéis <span style="font-weight: bold;">con antelación</span>.</div>
@@ -179,6 +181,18 @@
             <div class="text-contenido" style="margin-bottom: 2rem;">Si el tiempo acompaña, el cóctel será al aire libre. La comida y la fiesta se celebrarán en espacios cubiertos.</div>
             <div class="text-titulo" style="margin-bottom: 1rem;">¿Dónde puedo dejar mis cosas?</div>
             <div class="text-contenido">Habrá un espacio habilitado en la finca para dejar chaquetas, bolsos y cualqueir otra pertenencia durante la celebración.</div>
+        </div>
+    </section>
+    <section id="preguntas">
+        <div class="inicio" style="text-align: center;">
+            <div class="text-apartado" style="margin-top: 2rem;">REGALO</div>
+            <div class="text-apartado-sub" style="margin-top: -4rem;">aportación</div>
+            <div class="text-contenido" style="margin-top: 1rem; text-align: center; color: var(--color-secundario);">El mejor regalo para nosotros es que nos acompañéis en este viaje, pero si aún así queréis colaborar en nuestra Luna de Miel...</div>
+            <div class="rectangle text-contenido" style="color: var(--color-principal);" onclick="showDatosBancarios()" id="mostrarDatosBancarios">MOSTRAR DATOS BANCARIOS</div>
+            <div class="rectangle text-contenido" style="width: auto; display: none; color: var(--color-principal);" id="datosBancarios">
+                <div>ES97 0049 1632 5422 1019 4313</div>
+                <div style="color: var(--color-green); text-decoration: underline; justify-self: end;" onclick="hiddeDatosBancarios()">OCULTAR</div>
+            </div>
         </div>
     </section>
     <section id="rsvp">
@@ -191,7 +205,7 @@
                 data-email="esther.sanchezatienzas@gmail.com"
                 action="https://script.google.com/macros/s/AKfycbzTvcncScDPqd_mEGb2jJUmPhBUs-N74j0zU2mFcssLO-rLO_DiUchbjIkSaECadBQZ/exec">
                 <div class="form" style="text-align: start;">
-                    <div class="text-contenido" style=" text-align: center; color: var(--color-secundario);">Por favor, confirma tu asistencia antes del <span style="font-weight: bold;">xx de xx de 2026</span>.</div>
+                    <div class="text-contenido" style="margin-top: 1rem; text-align: center; color: var(--color-secundario);">Por favor, confirma tu asistencia antes del <span style="font-weight: bold;">xx de xx de 2026</span>.</div>
                     <div style="margin-bottom: 1rem;">
                         <label for="nombre" class="text-contenido">NOMBRE*</label>
                         <input type="text" class="form-control" id="nombre" placeholder="" name="NOMBRE" required>
@@ -226,12 +240,28 @@
                         <div class="text-contenido" style="margin-bottom: .5rem;">¿NECESITAS TRANSPORTE EN AUTOBÚS?</div>
                         <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
                             <div class="form-check" style="cursor: pointer;">
-                                <input class="form-check-input si" type="radio" name="¿AUTOBÚS?" id="autobusSi" style="cursor: pointer;" value="SI">
+                                <input class="form-check-input" type="radio" name="¿AUTOBÚS?" id="autobusSi" style="cursor: pointer;" value="SI">
                                 <label class="form-check-label" for="autobusSi" style="cursor: pointer;">Sí</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input no" type="radio" name="¿AUTOBÚS?" id="autobusNo" style="cursor: pointer;" value="NO" checked>
+                                <input class="form-check-input" type="radio" name="¿AUTOBÚS?" id="autobusNo" style="cursor: pointer;" value="NO" checked>
                                 <label class="form-check-label" for="autobusNo" style="cursor: pointer;">No</label>
+                            </div>
+                        </div>
+                        <div id="opciones" class="hidden">
+                            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                                <div class="form-check" style="cursor: pointer;">
+                                    <input class="form-check-input" type="radio" name="PARADA" id="trescantos" style="cursor: pointer;" value="Tres Cantos" checked>
+                                    <label class="form-check-label" for="trescantos" style="cursor: pointer;">Tres Cantos</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="PARADA" id="madrid" style="cursor: pointer;" value="Madrid">
+                                    <label class="form-check-label" for="madrid" style="cursor: pointer;">Madrid</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="PARADA" id="guadalajara" style="cursor: pointer;" value="Guadalajara">
+                                    <label class="form-check-label" for="guadalajara" style="cursor: pointer;">Guadalajara</label>
+                                </div>
                             </div>
                         </div>
                         <div style="margin-bottom: 1rem;">
@@ -327,6 +357,33 @@
         actualizarContador();
         const intervalo = setInterval(actualizarContador, 1000);
 
+        // APORTACIÓN
+        const mostrarDatosBancarios = document.getElementById("mostrarDatosBancarios");
+        const datosBancarios = document.getElementById("datosBancarios");
+        function showDatosBancarios() {
+            mostrarDatosBancarios.style.display = "none";
+            datosBancarios.style.display = "block";
+
+            confetti({
+                particleCount: 50,
+                angle: 30,
+                spread: 50,
+                origin: {x: 0},
+                colors: ['#770928', '#2F3F7B', '#91acdb', '#f3e1cf']
+            });
+            confetti({
+                particleCount: 50,
+                angle: 150,
+                spread: 50,
+                origin: {x: 1},
+                colors: ['#770928', '#2F3F7B', '#91acdb', '#f3e1cf']
+            });
+        }
+        function hiddeDatosBancarios() {
+            datosBancarios.style.display = "none";
+            mostrarDatosBancarios.style.display = "block";
+        }
+
         // RSVP
         const asistenciaSi = document.getElementById("si");
         const asistenciaNo = document.getElementById("no");
@@ -338,6 +395,16 @@
         asistenciaNo.addEventListener("change", () => {
             confirmacion.classList.add("hidden");
             send.disabled = false;
+        });
+
+        const autobusSi = document.getElementById("autobusSi");
+        const autobusNo = document.getElementById("autobusNo");
+        const opciones = document.getElementById("opciones");
+        autobusSi.addEventListener("change", () => {
+            opciones.classList.remove("hidden");
+        });
+        autobusNo.addEventListener("change", () => {
+            opciones.classList.add("hidden");
         });
 
         const numeroInvitados = document.getElementById("numeroInvitados");
