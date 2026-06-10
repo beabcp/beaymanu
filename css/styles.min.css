@@ -5,6 +5,7 @@
   --color-principal: #770928;
   --color-secundario: #2F3F7B;
   --color-secundario-claro: #91acdb;
+  --color-base-opacity: #f3e1cf;
 
 
 
@@ -61,6 +62,70 @@
   font-style: normal;
   /* letter-spacing: .1rem; */
   color: var(--color-secundario-claro);
+}
+
+.body {
+  background: var(--color-base);
+}
+
+.inicio {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+.fin {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-principal);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* INPUT */
+.form-control {
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: 4px dotted var(--color-secundario) !important;
+  border-radius: 4px 4px 0 0 !important;
+  /* background: transparent !important; */
+  
+  font-family: "WrittenOnHisHands" !important;
+  font-size: 1.5rem !important;
+  color: var(--color-principal) !important;
+
+  padding: 0rem .5rem !important;
+  overflow: visible !important;
+}
+
+/* RADIO BUTTON */
+input[type="radio"]:checked {
+  background-color: white;
+  border-color: var(--color-principal);
+}
+.form-check-input:checked[type=radio] {
+  box-shadow: none !important;
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='%23770928'/%3e%3c/svg%3e") !important;
+}
+.form-check-label {
+  font-family: "CupcakeSmiles";
+  font-size: 1.5rem !important;
+  color: var(--color-principal);
+  margin-top: -.25rem;
+}
+
+/** BUTTON **/
+.btn {
+  background-color: var(--color-principal) !important;
+  border: none !important;
+  
+  font-family: "CupcakeSmiles" !important;
+  font-size: 1.25rem !important;
+  color: white !important;
+}
+.btn-primary {
+  width: 2.5rem;
 }
 
 
@@ -142,23 +207,7 @@
   color: var(--color-blue);
 }
 
-.body {
-  background: var(--color-base);
-}
 
-.inicio {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
-}
-.fin {
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--color-blue-dark);
-  padding: 1rem;
-}
 
 /* PROGRESS BAR */
 .progress-bar {
@@ -229,57 +278,11 @@
   padding: .5rem .5rem 1rem .5rem !important;
 }
 
-/* INPUT */
-.form-control {
-  box-shadow: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  
-  font-family: "Blimps" !important;
-  font-size: 2rem !important;
-  color: var(--color-blue-dark) !important;
-  line-height: 2rem !important;
 
-  padding: 0rem .5rem !important;
-  height: 2rem !important;
-  overflow: visible !important;
-}
 
-/* RADIO BUTTON */
-input[type="radio"]:checked {
-  background-color: white;
-  border-color: var(--color-blue-dark);
-}
-.form-check-input:checked[type=radio] {
-  box-shadow: none !important;
-  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2.5' fill='%232F3F7B'/%3e%3c/svg%3e") !important;
-}
-.form-check-label {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: .75rem;
-  letter-spacing: .1rem;
-  color: var(--color-blue-dark);
-}
 
-/** BUTTON **/
-.btn {
-  background-color: var(--color-blue) !important;
-  border: none !important;
-  
-  font-family: "Roboto Mono", monospace !important;
-  font-optical-sizing: auto !important;
-  font-weight: 200 !important;
-  font-style: normal !important;
-  font-size: .75rem !important;
-  letter-spacing: .1rem !important;
-}
-.btn-primary {
-  width: 2.5rem;
-}
+
+
 
 .hidden {
   display: none;
