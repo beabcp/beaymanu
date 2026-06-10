@@ -1,7 +1,12 @@
 (function() {
   // get all data in form and return object
   function getFormData(form) {
-    console.log('getFormData');
+    var formElements = form.querySelector(".form");
+    formElements.style.display = "none";
+
+    var loading = document.getElementById("loading");
+    loading.style.display = "block";
+
     var elements = form.elements;
 
     var fields = Object.keys(elements).map(function(k) {
@@ -67,7 +72,7 @@
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
-          var formElements = form.querySelector(".form")
+          var formElements = form.querySelector(".form");
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
@@ -78,6 +83,9 @@
           } else {
             losiento.style.display = "block";
           }
+
+          const loading = document.getElementById("loading");
+          loading.style.display = "none";
         }
     };
     // url encode form data for sending as post data
